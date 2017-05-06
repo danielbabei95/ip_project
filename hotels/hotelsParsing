@@ -1,0 +1,22 @@
+import java.io.IOException;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class WebParser {
+	public static void main(String[] args)throws IOException{
+		Document doc;
+		doc=Jsoup.connect("https://www.booking.com/city/ro/iasi-ro.ro.html").get();
+		Elements links=doc.getElementsByTag("a");
+		for(Element link :links){
+			String l=link.attr("content");
+			if(l.length()>0){
+				if(l.length()<4){
+					l=doc.baseUri()+l.substring(1);
+				}
+			}
+			System.out.println(l);
+		}
+}
+}
