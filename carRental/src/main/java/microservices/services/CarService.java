@@ -1,8 +1,8 @@
-package carRental.services;
+package microservices.services;
 
 import java.util.List;
 
-import carRental.models.Car;
+import microservices.models.Car;
 
 public interface CarService extends CrudService<Car> {
       List<Car> getCarsByAgencyId(Long agencyId);

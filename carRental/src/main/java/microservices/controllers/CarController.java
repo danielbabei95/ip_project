@@ -1,16 +1,16 @@
-package carRental.controllers;
+package microservices.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import carRental.DTO.CarDto;
-import carRental.DTO.CreatingCarDto;
-import carRental.models.Agency;
-import carRental.models.Car;
-import carRental.services.AgencyService;
-import carRental.services.CarService;
+import microservices.DTO.CarDto;
+import microservices.DTO.CreatingCarDto;
+import microservices.models.Agency;
+import microservices.models.Car;
+import microservices.services.AgencyService;
+import microservices.services.CarService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +24,7 @@ public class CarController {
     @Autowired
     private AgencyService agencyService;
 
+    @microservices.JsonFilter(keys = {"type","pricePerDay","id"})
     @RequestMapping(value = "/{agencyId}/cars", method = RequestMethod.GET)
     public ResponseEntity<List<CarDto>> getCarsByAgencyId(@PathVariable("agencyId") Long agencyId) {
         Agency agency = this.agencyService.getById(agencyId);

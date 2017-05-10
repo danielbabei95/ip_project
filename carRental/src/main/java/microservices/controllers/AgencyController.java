@@ -1,14 +1,14 @@
-package carRental.controllers;
+package microservices.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import carRental.DTO.AgencyDto;
-import carRental.DTO.CreatingAgencyDto;
-import carRental.models.Agency;
-import carRental.services.AgencyService;
+import microservices.DTO.AgencyDto;
+import microservices.DTO.CreatingAgencyDto;
+import microservices.models.Agency;
+import microservices.services.AgencyService;
 
 import java.util.ArrayList;
 import java.util.List;

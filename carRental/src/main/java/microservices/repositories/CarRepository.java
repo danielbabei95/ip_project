@@ -1,8 +1,8 @@
-package carRental.repositories;
+package microservices.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import carRental.models.Car;
+import microservices.models.Car;
 
 public interface CarRepository extends JpaRepository<Car, Long> {
 }

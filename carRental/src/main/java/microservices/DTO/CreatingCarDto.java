@@ -1,6 +1,4 @@
-package carRental.DTO;
-
-import javax.persistence.Column;
+package microservices.DTO;
 
 public class CreatingCarDto {
     public String type;

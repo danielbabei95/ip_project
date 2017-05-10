@@ -1,10 +1,10 @@
-package carRental.services;
+package microservices.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import carRental.models.Agency;
-import carRental.repositories.AgencyRepository;
+import microservices.models.Agency;
+import microservices.repositories.AgencyRepository;
 
 import java.util.List;
 

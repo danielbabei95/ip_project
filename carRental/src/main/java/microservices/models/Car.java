@@ -1,4 +1,4 @@
-package carRental.models;
+package microservices.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -63,7 +63,7 @@ public class Car implements Serializable {
     }
 
     public Integer getPricePerDay() {
-        return numberOfSeats;
+        return pricePerDay;
     }
 
     public void setPricePerDay(Integer pricePerDay) {

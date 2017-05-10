@@ -1,4 +1,4 @@
-package carRental.models;
+package microservices.models;
 
 import javax.persistence.*;
 import java.io.Serializable;

@@ -1,8 +1,6 @@
-package carRental.services;
+package microservices.services;
 
 import java.util.List;
-
-import carRental.models.Agency;
 
 public interface CrudService<T> {
     T save(T entity);
