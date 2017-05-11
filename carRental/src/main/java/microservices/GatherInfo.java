@@ -95,6 +95,8 @@ public class GatherInfo {
 			for (Element link : links) {
 			  String masina = link.select("h4 span").text();
 			  masina = masina.replaceAll("(Nou)","");
+			  //masina = masina.replaceAll("(NOU)","");
+			  //masina = masina.replaceAll("()","");
 			  String cost = link.select("h4 a").text();
 			  cost = cost.replaceAll("[^\\d.]", "");
 			  if(masina.length()>5 && Integer.parseInt(cost)>0 )
