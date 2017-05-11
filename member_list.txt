@@ -1,6 +1,6 @@
-Grupa: E
-Modulul 2
-Echipa 2
+Group E
+Module M2-tourism services2
+Team 2
 
 BABEI V. DANIEL - SCRUM Master
 AIOANEI A. IOLANDA-ALEXANDRA
