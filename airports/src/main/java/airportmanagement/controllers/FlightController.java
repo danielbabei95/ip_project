@@ -60,9 +60,9 @@ public class FlightController {
         flightDto.id = flight.getId();
         flightDto.arrivalHour = flight.getArrivalHour();
         flightDto.departureHour = flight.getDepartureHour();
-        flightDto.departureCity = flight.getCity();
+        flightDto.departureCity = flight.getDepartureCity();
         flightDto.company = flight.getCompany();
-        flightDto.arrivalCity = flight.getDirection();
+        flightDto.arrivalCity = flight.getArrivalCity();
         flightDto.flightNumber = flight.getFlightNumber();
         flightDto.status=flight.getStatus();
         flightDto.day=flight.getDay();
@@ -72,11 +72,11 @@ public class FlightController {
 
     private Flight toCreatingModel(CreatingFlightDto dto) {
         Flight flight = new Flight();
-        flight.setCity(dto.departureCity);
+        flight.setDepartureCity(dto.departureCity);
         flight.setArrivalHour(dto.arrivalHour);
         flight.setDepartureHour(dto.departureHour);
         flight.setCompany(dto.company);
-        flight.setDirection(dto.arrivalCity);
+        flight.setArrivalCity(dto.arrivalCity);
         flight.setFlightNumber(dto.flightNumber);
         flight.setStatus(dto.status);
         flight.setDay(dto.day);

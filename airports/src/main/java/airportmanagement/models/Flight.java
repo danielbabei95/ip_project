@@ -19,10 +19,12 @@ public class Flight implements Serializable {
     private String arrivalHour;
 
     @Column(nullable = false)
-    private String direction;
+    private String arrivalCity;
+
 
     @Column(nullable = false)
-    private String city;
+    private String departureCity;
+
     @Column(nullable = false)
     private String company;
     @Column(nullable = false)
@@ -59,20 +61,21 @@ public class Flight implements Serializable {
         this.arrivalHour = arrivalHour;
     }
 
-    public String getDirection() {
-        return direction;
+
+    public String getArrivalCity() {
+        return arrivalCity;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
+    public void setArrivalCity(String arrivalCity) {
+        this.arrivalCity = arrivalCity;
     }
 
-    public String getCity() {
-        return city;
+    public String getDepartureCity() {
+        return departureCity;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setDepartureCity(String departureCity) {
+        this.departureCity = departureCity;
     }
 
     public String getCompany() {

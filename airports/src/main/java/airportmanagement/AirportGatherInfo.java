@@ -102,13 +102,23 @@ public class AirportGatherInfo {
                         String departureHour = linie.select("td:eq(2) h6:eq(0)").text();
                         departureHour = departureHour.substring(15);
                         String arrivalHour = linie.select("td:eq(3) h6:eq(0)").text();
-                        arrivalHour = arrivalHour.substring(16);
+                        if (arrivalHour.isEmpty())
+                            arrivalHour = linie.select("td:eq(3) h6:eq(0) strong").text();
+
+                        if (departureHour.isEmpty())
+                            departureHour = linie.select("td:eq(3) h6:eq(1)").text();
+                        if (arrivalHour.length() > 17)
+                            arrivalHour = arrivalHour.substring(17);
+                        else
+                            arrivalHour=arrivalHour.substring(15);
+                        departureHour = departureHour.substring(1);
                         String arrivalCity = linie.select("td:eq(0) h6:eq(1)").text();
-                        if (arrivalCity.isEmpty() ) {
+                        if (arrivalCity.isEmpty()) {
                             arrivalCity = linie.select("td:eq(0) p:eq(1)").text();
                         }
-                        String departureCity = "bacau";
+                        String departureCity = "Bacau";
                         String company = linie.select("td:eq(5) h6:eq(0)").text();
+
                         if (company.length() > 10)
                             company = company.substring(11);
                         String flightNumber = linie.select("td:eq(1) h6:eq(0)").text();
@@ -123,10 +133,12 @@ public class AirportGatherInfo {
                         String departureHour = linie.select("td:eq(2) h6:eq(0)").text();
                         if (departureHour.length() > 15)
                             departureHour = departureHour.substring(15);
-                        String arrivalHour = linie.select("td:eq(3) h6:eq(0)").text();
+                        String arrivalHour = linie.select("td:eq(3) h6:eq(1)").text();
+                        if(arrivalHour.isEmpty())
+                            arrivalHour=linie.select("td:eq(3) h6:eq(0)").text();
                         if (arrivalHour.length() > 16)
                             arrivalHour = arrivalHour.substring(16);
-                        String arrivalCity = "bacau";
+                        String arrivalCity = "Bacau";
                         String departureCity = linie.select("td:eq(0) p:lt(2)").text();
 
                         String company = linie.select("td:eq(5) h6:eq(0)").text();
