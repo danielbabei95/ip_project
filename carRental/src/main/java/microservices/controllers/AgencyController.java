@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/agencies")
+@RequestMapping("/agencies")
 public class AgencyController {
     @Autowired
     private AgencyService service;
