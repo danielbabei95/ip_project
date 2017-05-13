@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.K5012.microservices</groupId>
-    <artifactId>microservices</artifactId>
+    <groupId>com.K5012.carRental</groupId>
+    <artifactId>carRental</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>microservices</name>
-    <description>Demo project for Spring Boot</description>
+    <name>carRental</name>
+    <description>carRental microservice</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
