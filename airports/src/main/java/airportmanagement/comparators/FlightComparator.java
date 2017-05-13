@@ -1,4 +1,4 @@
-package airportmanagement.Comparator;
+package airportmanagement.comparators;
 
 import airportmanagement.DTO.FlightDto;
 

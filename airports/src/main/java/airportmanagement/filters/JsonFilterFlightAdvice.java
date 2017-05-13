@@ -1,7 +1,8 @@
 package airportmanagement.filters;
 
-import airportmanagement.Comparator.FlightComparator;
 import airportmanagement.DTO.FlightDto;
+import airportmanagement.comparators.FlightComparator;
+
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
