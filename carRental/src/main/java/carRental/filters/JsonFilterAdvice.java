@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @ControllerAdvice
-public class JsonFilterCarAdvice implements ResponseBodyAdvice<List<CarDto>> {
+public class JsonFilterAdvice implements ResponseBodyAdvice<List<CarDto>> {
 	@Override
 	public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
 		List<Annotation> annotations = Arrays.asList(returnType.getMethodAnnotations());

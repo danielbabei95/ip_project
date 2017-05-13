@@ -33,7 +33,7 @@ public class GatherInfo {
 	public static void gatherTravis(String type, String model, Integer pricePerDay) {
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost("http://127.0.0.1:8081/v1/cars/1/cars");
+		HttpPost httppost = new HttpPost("http://127.0.0.1:8081/cars/1/cars");
 
 		httppost.setHeader("Content-type", "application/json");
 		httppost.setHeader("Accept", "application/json");
@@ -64,7 +64,7 @@ public class GatherInfo {
 	public void gatherTravis() {
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost("http://127.0.0.1:8081/v1/agencies");
+		HttpPost httppost = new HttpPost("http://127.0.0.1:8081/agencies");
 
 		httppost.setHeader("Content-type", "application/json");
 		httppost.setHeader("Accept", "application/json");
