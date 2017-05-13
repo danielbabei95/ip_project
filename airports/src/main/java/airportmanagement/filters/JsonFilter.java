@@ -1,4 +1,4 @@
-package airportmanagement;
+package airportmanagement.filters;
 
 import java.lang.annotation.*;
 

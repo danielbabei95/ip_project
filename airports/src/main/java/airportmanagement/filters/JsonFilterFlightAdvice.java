@@ -1,4 +1,4 @@
-package airportmanagement;
+package airportmanagement.filters;
 
 import airportmanagement.Comparator.FlightComparator;
 import airportmanagement.DTO.FlightDto;
@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @ControllerAdvice
-public class JsonFilterAdvice implements ResponseBodyAdvice<List<FlightDto>> {
+public class JsonFilterFlightAdvice implements ResponseBodyAdvice<List<FlightDto>> {
     @Override
     public boolean supports(MethodParameter returnType, Class<? extends HttpMessageConverter<?>> converterType) {
         List<Annotation> annotations = Arrays.asList(returnType.getMethodAnnotations());

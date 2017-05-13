@@ -22,7 +22,7 @@ public class FlightController {
 
     @Autowired
     private AirportService airportService;
-    @airportmanagement.JsonFilter(keys = {"day","arrivalCity","departureCity"})
+    @airportmanagement.filters.JsonFilter(keys = {"day","arrivalCity","departureCity"})
     @RequestMapping(value = "/{location}/flights", method = RequestMethod.GET)
     public ResponseEntity<List<FlightDto>> geFlightByAirport(@PathVariable("location") String location) {
         Airport airport = this.airportService.getByLocation(location);
