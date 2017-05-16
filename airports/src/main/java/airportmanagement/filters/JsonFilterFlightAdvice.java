@@ -47,12 +47,12 @@ public class JsonFilterFlightAdvice implements ResponseBodyAdvice<List<FlightDto
                 String parameterName = parameterNames.nextElement();
                 if(possibleFilters.contains(parameterName)) {
                     String parameterValue = servletRequest.getParameter(parameterName);
-                    Object valueFromMap = null;//map.get(parameterName);
+                    Object valueFromMap = null;
                     try {
                        Field field = map.getClass().getField(parameterName);
                         field.setAccessible(true);
                         valueFromMap = field.get(map);
-//                        System.out.println(field.get(map));
+
                     } catch (NoSuchFieldException e) {
                         e.printStackTrace();
                     } catch (IllegalAccessException e) {

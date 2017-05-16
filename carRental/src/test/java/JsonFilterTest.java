@@ -1,25 +1,14 @@
 
-import static org.junit.Assert.*;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.junit.*;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-
+import java.io.*;
 import java.net.URL;
 import java.nio.charset.Charset;
 
-
-import org.json.JSONArray;
-import org.json.JSONException;
-
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 
 public class JsonFilterTest {
@@ -55,7 +44,7 @@ public class JsonFilterTest {
 		int contor = 0;
 		try {
 
-			InputStream is = new URL("http://127.0.0.1:8081/v1/cars/1/cars?page=1&pageSize=5").openStream();
+			InputStream is = new URL("http://127.0.0.1:8081/cars/1/cars?page=1&pageSize=5").openStream();
 			BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 		    String jsonText = readAll(rd);
 			JSONArray genreJsonObject;

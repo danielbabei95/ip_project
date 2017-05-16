@@ -24,7 +24,7 @@ public class AirportGatherInfo {
 
     }
 
-    private void gatherObject(String day, String flightNumber, String company, String destination, String city, String departureHour, String arrivalHour, String status, String airport) {
+    public void gatherObject(String day, String flightNumber, String company, String destination, String city, String departureHour, String arrivalHour, String status, String airport) {
 
         HttpClient httpclient = HttpClients.createDefault();
         HttpPost httppost = new HttpPost(("http://127.0.0.1:8080/airports/" + airport + "/flights"));
@@ -46,7 +46,6 @@ public class AirportGatherInfo {
             httppost.setEntity(new StringEntity(obj.toString(), "UTF-8"));
             HttpResponse response = httpclient.execute(httppost);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
