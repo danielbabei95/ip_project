@@ -1,3 +1,4 @@
+
 package carRental.filters;
 
 import java.lang.annotation.*;
@@ -9,3 +10,4 @@ public @interface JsonFilter {
     // JSON keys that will be used for filtering
     String[] keys() default {};
 }
+

@@ -58,7 +58,7 @@ public class CarController {
         return new ResponseEntity<>(toDto(savedCar), HttpStatus.CREATED);
     }
 
-    private CarDto toDto(Car car) {
+    public CarDto toDto(Car car) {
         CarDto carDto = new CarDto();
         carDto.id = car.getId();
         carDto.type = car.getType();
@@ -69,7 +69,7 @@ public class CarController {
         return carDto;
     }
 
-    private Car toCreatingModel(CreatingCarDto dto) {
+    public Car toCreatingModel(CreatingCarDto dto) {
         Car car = new Car();
         car.setType(dto.type);
         car.setModel(dto.model);

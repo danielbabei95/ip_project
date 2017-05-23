@@ -1,3 +1,4 @@
+
 package carRental.filters;
 
 import org.springframework.core.MethodParameter;
@@ -29,7 +30,6 @@ public class JsonFilterAdvice implements ResponseBodyAdvice<List<CarDto>> {
 		List<Annotation> annotations = Arrays.asList(returnType.getMethodAnnotations());
 		return annotations.stream().anyMatch(annotation -> annotation.annotationType().equals(JsonFilter.class));
 	}
-
 	@Override
 	public List<CarDto> beforeBodyWrite(List<CarDto> body, MethodParameter returnType, MediaType selectedContentType,
 			Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request,
@@ -43,6 +43,7 @@ public class JsonFilterAdvice implements ResponseBodyAdvice<List<CarDto>> {
 		HttpServletRequest servletRequest = ((ServletServerHttpRequest) request).getServletRequest();
 
 		List<CarDto> result = values.stream().filter(map -> {
+
 			boolean match = true;
 			Enumeration<String> parameterNames = servletRequest.getParameterNames();
 			while (parameterNames.hasMoreElements()) {
@@ -60,25 +61,12 @@ public class JsonFilterAdvice implements ResponseBodyAdvice<List<CarDto>> {
 					} catch (IllegalAccessException e) {
 						e.printStackTrace();
 					}
-					/*
-					 * Method m =
-					 * map.getClass().getMethod("get"+parameterName.substring(0,
-					 * 1).toUpperCase() +parameterName.substring(1));
-					 * valueFromMap =m.invoke(map); }
-					 */
 					match = (valueFromMap != null)
 							&& valueFromMap.toString().toLowerCase().equals(parameterValue.toString().toLowerCase());
 				}
 			}
 			return match;
 		}).collect(Collectors.toList());
-		// colectioneaza in lista, as putea
-		// compara ceva ?
-		// result.ORDER whatever
-
-		// Chestie importanta//
-		// parcurg din nou parametrii primiti in URL si verific pt proprii mei
-		// parametrii
 
 		Enumeration<String> parameterNames = servletRequest.getParameterNames();
 		while (parameterNames.hasMoreElements()) {
@@ -119,12 +107,6 @@ public class JsonFilterAdvice implements ResponseBodyAdvice<List<CarDto>> {
 			}
 
 		}
-
-		// paginare
-		// OBS
-		// la GET ar fi optim ca parametrii de ordonare sa fie inaintea
-		// paginarii
-		// IE: sa se faca paginarea dupa ordonare -- De asta parcurg din nou parametrii
 
 		parameterNames = servletRequest.getParameterNames();
 		while (parameterNames.hasMoreElements()) {

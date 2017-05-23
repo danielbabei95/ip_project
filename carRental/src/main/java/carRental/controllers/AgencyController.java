@@ -54,7 +54,7 @@ public class AgencyController {
         return new ResponseEntity<>(toDto(agency), HttpStatus.OK);
     }
 
-    private AgencyDto toDto(Agency agency) {
+    public AgencyDto toDto(Agency agency) {
     	AgencyDto dto = new AgencyDto();
         dto.name = agency.getName();
         dto.address = agency.getAddress();
@@ -62,7 +62,7 @@ public class AgencyController {
         return dto;
     }
 
-    private Agency toCreatingModel(CreatingAgencyDto dto) {
+    public Agency toCreatingModel(CreatingAgencyDto dto) {
     	Agency agency = new Agency();
     	agency.setName(dto.name);
     	agency.setAddress(dto.address);

@@ -4,7 +4,6 @@ import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.w3c.dom.Entity;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -85,7 +84,7 @@ public class GatherInfo {
 
 	}
 
-	public static void main(String argv[]) {
+	public static void gather() throws Exception{
 		GatherInfo gh = new GatherInfo();
 		gh.gatherTravis();
 
@@ -109,6 +108,7 @@ public class GatherInfo {
 		} catch (Exception e) {
 			System.err.println("Eroare de procesare DOM: ");
 			e.printStackTrace();
+			throw e;
 		}
 
 		try {
@@ -149,6 +149,15 @@ public class GatherInfo {
 			}
 		} catch (Exception e) {
 			System.err.println("Eroare de procesare DOM: ");
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String argv[]) throws Exception {
+		try {
+			gather();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
