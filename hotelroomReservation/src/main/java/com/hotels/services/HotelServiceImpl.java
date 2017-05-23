@@ -1,9 +1,9 @@
-package com.hotels.services;
+package com.hotelsamdrooms.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.hotels.models.Hotel;
-import com.hotels.repositories.HotelRepository;
+import com.hotelsamdrooms.models.Hotel;
+import com.hotelsamdrooms.repositories.HotelRepository;
 import java.util.List;
 
 @Service
