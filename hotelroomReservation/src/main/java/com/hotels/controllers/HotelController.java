@@ -1,23 +1,23 @@
-package com.hotels.controllers;
+package com.hotelsamdrooms.controllers;
 
-import com.hotels.DTO.CreatingHotelDto;
-import com.hotels.DTO.HotelDto;
-import com.hotels.models.Hotel;
-import com.hotels.services.HotelService;
+import com.hotelsamdrooms.DTO.CreatingHotelDto;
+import com.hotelsamdrooms.DTO.HotelDto;
+import com.hotelsamdrooms.models.Hotel;
+import com.hotelsamdrooms.services.HotelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/hotels")
+@RequestMapping("/hotels")
 public class HotelController {
     @Autowired
     private HotelService service;
 
+    @com.hotelsamdrooms.filters.JsonFilter(keys = {"category"})
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<List<HotelDto>> get() {
         List<Hotel> hotels = this.service.getAll();
@@ -44,7 +44,7 @@ public class HotelController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<HotelDto> getStudentById(@PathVariable("id") Long id) {
+    public ResponseEntity<HotelDto> getHotelById(@PathVariable("id") Long id) {
         Hotel hotel = this.service.getById(id);
         if (hotel == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -58,10 +58,11 @@ public class HotelController {
         dto.name = hotel.getName();
         dto.address = hotel.getAddress();
         dto.id = hotel.getId();
-        dto.email = hotel.getEmail();
         dto.phone = hotel.getPhone();
         dto.category = hotel.getCategory();
         dto.description = hotel.getDescription();
+        dto.facilities=hotel.getFacility();
+        dto.rooms=hotel.getRoom();
         return dto;
     }
 
@@ -69,10 +70,11 @@ public class HotelController {
         Hotel hotel = new Hotel();
         hotel.setName(dto.name);
         hotel.setAddress(dto.address);
-        hotel.setEmail(dto.email);
         hotel.setPhone(dto.phone);
         hotel.setCategory(dto.category);
         hotel.setDescription(dto.description);
+        hotel.setFacility(dto.facilities);
+        hotel.setRoom(dto.rooms);
         return hotel;
     }
 

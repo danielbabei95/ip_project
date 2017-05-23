@@ -1,4 +1,4 @@
-package com.hotels.models;
+package com.hotelsamdrooms.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -13,28 +13,27 @@ public class Hotel implements Serializable{
     @Column(nullable = false)
     private Long id;
 
-    @Column(length = 50, nullable = false)
+    @Column(length = 500, nullable = false)
     private String name;
 
-    @Column(length = 50, nullable = false)
+    @Column(length = 500, nullable=false)
     private String address;
 
-    @Column(length = 50, nullable = false)
-    private String email;
+    @Column(length = 500, nullable=false)
+    private String phone;
 
-    @Column(nullable = false)
-    private int phone;
+    @Column(length=500)
+    private float category;
 
-    @Column(nullable = false)
-    private int category;
-
-    @Column(length = 50, nullable = false)
+    @Column(length = 5000)
     private String description;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "hotel", cascade={CascadeType.ALL})
-    private List<Room> rooms;
+    @Column
+    @ElementCollection(targetClass=String.class)
+    private List<String> rooms;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "hotel", cascade={CascadeType.ALL})
+   @Column
+   @ElementCollection(targetClass=String.class)
     private List<String> facilities;
 
     public Long getId() {
@@ -53,27 +52,19 @@ public class Hotel implements Serializable{
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
-        this.phone=phone;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public int getCategory() {
+    public float getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(float category) {
         this.category=category;
     }
 
@@ -93,19 +84,15 @@ public class Hotel implements Serializable{
         this.description = description;
     }
 
-    public List<Room> getRoomNr() {
-        return rooms;
-    }
+    public List<String> getRoom() {return rooms;    }
 
-    public void setRoomNr(List<Room> rooms) {
-        this.rooms = rooms;
-    }
+    public void setRoom(List<String> rooms) {this.rooms = rooms;    }
 
-    public List<String> getFacilities() {
+    public List<String> getFacility() {
         return facilities;
     }
 
-    public void setFacilities(List<String> facilities) {
+    public void setFacility(List<String> facilities) {
         this.facilities = facilities;
     }
 }
