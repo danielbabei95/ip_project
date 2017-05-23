@@ -7,6 +7,5 @@ public class CreatingFlightDto {
     public String departureCity;
     public String company;
     public String flightNumber;
-    public String status;
     public String day;
 }

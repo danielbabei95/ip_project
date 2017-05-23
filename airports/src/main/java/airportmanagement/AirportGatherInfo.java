@@ -6,15 +6,20 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
 import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 
-
+//import org.json.JSONObject;
 public class AirportGatherInfo {
 
     public static void main(String argv[]) {
@@ -24,10 +29,10 @@ public class AirportGatherInfo {
 
     }
 
-    public void gatherObject(String day, String flightNumber, String company, String destination, String city, String departureHour, String arrivalHour, String status, String airport) {
+    public void gatherObject(String day, String flightNumber, String company, String destination, String city, String departureHour, String arrivalHour,  String airport) {
 
         HttpClient httpclient = HttpClients.createDefault();
-        HttpPost httppost = new HttpPost(("http://127.0.0.1:8080/airports/" + airport + "/flights"));
+        HttpPost httppost = new HttpPost(("http://127.0.0.1:8081/airports/" + airport + "/flights"));
 
         httppost.setHeader("Content-type", "application/json");
         httppost.setHeader("Accept", "application/json");
@@ -42,7 +47,6 @@ public class AirportGatherInfo {
             obj.put("departureCity", city);
             obj.put("departureHour", departureHour);
             obj.put("arrivalHour", arrivalHour);
-            obj.put("status", status);
             httppost.setEntity(new StringEntity(obj.toString(), "UTF-8"));
             HttpResponse response = httpclient.execute(httppost);
         } catch (IOException e) {
@@ -53,7 +57,7 @@ public class AirportGatherInfo {
     private void gatherAirport(String location) {
 
         HttpClient httpclient = HttpClients.createDefault();
-        HttpPost httppost = new HttpPost("http://127.0.0.1:8080/airports");
+        HttpPost httppost = new HttpPost("http://127.0.0.1:8081/airports");
 
         httppost.setHeader("Content-type", "application/json");
         httppost.setHeader("Accept", "application/json");
@@ -79,10 +83,37 @@ public class AirportGatherInfo {
         gatherAirport("chisinau");
 
         gatherAirport("bacau");
-
+        gatherAirport("iasi");
         suceavaGather();
         chisinauGather();
         bacauGather();
+        iasiGather();
+    }
+
+    private void iasiGather() {
+
+        String filePath = new File("").getAbsolutePath();
+        System.out.println(filePath);
+        JSONObject obj;
+
+        FileReader fileReader = null;
+        try {
+            fileReader = new FileReader( filePath +"\\src\\main\\resources\\iasi.json");
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line = null;
+            while((line = bufferedReader.readLine()) != null) {
+
+                obj = (JSONObject) new JSONParser().parse(line);
+                gatherObject(obj.get("day").toString(), obj.get("flightNumber").toString(),obj.get("company").toString(),obj.get("arrivalCity").toString(),obj.get("departureCity").toString(),obj.get("departureHour").toString(),obj.get("arrivalHour").toString(),  "iasi");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+//        g
     }
 
     private void bacauGather() {
@@ -122,8 +153,8 @@ public class AirportGatherInfo {
                             company = company.substring(11);
                         String flightNumber = linie.select("td:eq(1) h6:eq(0)").text();
                         flightNumber = flightNumber.substring(10);
-                        String status = "estimat";
-                        gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, status, "bacau");
+
+                        gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, "bacau");
                     }
                 } else {
                     String day = parte.select("span").text();
@@ -145,8 +176,8 @@ public class AirportGatherInfo {
                             company = company.substring(11);
                         String flightNumber = linie.select("td:eq(1) h6:eq(0)").text();
                         flightNumber = flightNumber.substring(10);
-                        String status = "estimat";
-                        gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, status, "bacau");
+
+                        gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour,  "bacau");
                     }
                 }
             }
@@ -177,8 +208,8 @@ public class AirportGatherInfo {
                     String departureCity = linie.select("td:eq(4)").text();
                     String company = linie.select("td:eq(2) a").text();
                     String flightNumber = linie.select("td:eq(1)").text();
-                    String status = "estimat";
-                    gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, status, "suceava");
+
+                    gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour,  "suceava");
 
                 }
 
@@ -201,8 +232,8 @@ public class AirportGatherInfo {
                 String departureCity = linie.select("td:eq(0)").text();
                 String company = " ";
                 String flightNumber = linie.select("td:eq(3)").text();
-                String status = "estimat";
-                gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, status, "chisinau");
+
+                gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour,  "chisinau");
             }
             for (Element linie : linii) {   //plecari
                 String day = linie.select("td:eq(1) ").text();
@@ -212,8 +243,8 @@ public class AirportGatherInfo {
                 String departureCity = "Chisinau";
                 String company = " ";
                 String flightNumber = linie.select("td:eq(3)").text();
-                String status = "estimat";
-                gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, status, "chisinau");
+
+                gatherObject(day, flightNumber, company, arrivalCity, departureCity, departureHour, arrivalHour, "chisinau");
             }
         } catch (Exception e) {
             System.err.println("Eroare de procesare DOM: ");

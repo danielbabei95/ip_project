@@ -30,9 +30,6 @@ public class Flight implements Serializable {
     @Column(nullable = false)
     private String flightNumber;
 
-    @Column(nullable = true)
-    private String status;
-
     @ManyToOne
     @JoinColumn(name = "airport")
     private Airport airport;
@@ -94,13 +91,6 @@ public class Flight implements Serializable {
         this.flightNumber = flightNumber;
     }
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 
     public Airport getAirport() {
         return airport;

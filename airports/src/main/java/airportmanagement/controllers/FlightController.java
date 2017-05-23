@@ -64,7 +64,6 @@ public class FlightController {
         flightDto.company = flight.getCompany();
         flightDto.arrivalCity = flight.getArrivalCity();
         flightDto.flightNumber = flight.getFlightNumber();
-        flightDto.status=flight.getStatus();
         flightDto.day=flight.getDay();
 
         return flightDto;
@@ -78,7 +77,6 @@ public class FlightController {
         flight.setCompany(dto.company);
         flight.setArrivalCity(dto.arrivalCity);
         flight.setFlightNumber(dto.flightNumber);
-        flight.setStatus(dto.status);
         flight.setDay(dto.day);
         return flight;
     }

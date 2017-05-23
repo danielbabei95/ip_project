@@ -1,0 +1,99 @@
+ {"day":"Monday", "flightNumber":"W6 3676", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"ROMA (CIAMPINO)", "departureHour":"  ", "arrivalHour":"00:55" }
+   {"day":"Monday", "flightNumber":"RO396", "company":"TAROM", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"04:00"  }
+   {"day":"Monday", "flightNumber":"0B6822", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"KOLN", "departureHour":"  ", "arrivalHour":"13:00"  }
+   {"day":"Monday", "flightNumber":"W6 3652", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"13:15"  }
+   {"day":"Monday", "flightNumber":"OS645", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Monday", "flightNumber":"0B6806", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"PARIS(BVA)", "departureHour":"  ", "arrivalHour":"17:30"  }
+   {"day":"Monday", "flightNumber":"W6 3682", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"CATANIA", "departureHour":"  ", "arrivalHour":"19:30"  }
+   {"day":"Monday", "flightNumber":"0B6832", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"21:05"  }
+   {"day":"Monday", "flightNumber":"W6 3651", "company":"WIZZ AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Monday", "flightNumber":"0B6821", "company":"BLUE AIR", "arrivalCity":"KOLN", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"07:00"  }
+   {"day":"Monday", "flightNumber":"0B6805", "company":"BLUE AIR", "arrivalCity":"PARIS(BVA)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"10:30"  }
+   {"day":"Monday", "flightNumber":"0B6831", "company":"BLUE AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:45"  }
+   {"day":"Monday", "flightNumber":"W6 3681", "company":"WIZZ AIR", "arrivalCity":"CATANIA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"14:00"  }
+   {"day":"Monday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Monday", "flightNumber":"W6 3669", "company":"WIZZ AIR", "arrivalCity":"TREVISO(VENETIA)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"20:00"  }
+   {"day":"Tuesday", "flightNumber":"W6 3670", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"TREVISO(VENETIA)", "departureHour":"  ", "arrivalHour":"00:45"  }
+   {"day":"Tuesday", "flightNumber":"W6 3690 ", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"TELAVIV", "departureHour":"  ", "arrivalHour":"12:35"  }
+   {"day":"Tuesday", "flightNumber":"RO158 ", "company":"TAROM", "arrivalCity":"Iasi", "departureCity":"TELAVIV", "departureHour":"  ", "arrivalHour":"12:50"  }
+   {"day":"Tuesday", "flightNumber":"0B6808", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"BARCELONA", "departureHour":"  ", "arrivalHour":"15:00"  }
+   {"day":"Tuesday", "flightNumber":"OS645", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Tuesday", "flightNumber":"W6 3672", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"BERGAMO", "departureHour":"  ", "arrivalHour":"19:05"  }
+   {"day":"Tuesday", "flightNumber":"0B6816", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"ROMA", "departureHour":"  ", "arrivalHour":"19:20"  }
+   {"day":"Tuesday", "flightNumber":"RO396", "company":"TAROM", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"21:40"  }
+   {"day":"Tuesday", "flightNumber":"W6 3668", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"BOLOGNA", "departureHour":"  ", "arrivalHour":"23:55"  }
+   {"day":"Tuesday", "flightNumber":"W6 3689", "company":"WIZZ AIR", "arrivalCity":"TELAVIV", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:00"  }
+   {"day":"Tuesday", "flightNumber":"RO157", "company":"TAROM", "arrivalCity":"TELAVIV", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Tuesday", "flightNumber":"0B6807", "company":"BLUE AIR", "arrivalCity":"BARCELONA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"07:00"  }
+   {"day":"Tuesday", "flightNumber":"0B6815", "company":"BLUE AIR", "arrivalCity":"ROMA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:40"  }
+   {"day":"Tuesday", "flightNumber":"W6 3671", "company":"WIZZ AIR", "arrivalCity":"BERGAMO", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:50"  }
+   {"day":"Tuesday", "flightNumber":"RO395", "company":"TAROM", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"14:30"  }
+   {"day":"Tuesday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Tuesday", "flightNumber":"W6 3667", "company":"WIZZ AIR", "arrivalCity":"BOLOGNA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"19:35"  }
+   {"day":"Wednesday", "flightNumber":"W6 3652", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"13:15"  }
+   {"day":"Wednesday", "flightNumber":"OS644", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Wednesday", "flightNumber":"0B6832", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"15:50"  }
+   {"day":"Wednesday", "flightNumber":"0B6824", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"BRUXELLES", "departureHour":"  ", "arrivalHour":"17:00"  }
+   {"day":"Wednesday", "flightNumber":"W6 3694", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LARNACA", "departureHour":"  ", "arrivalHour":"19:20"  }
+   {"day":"Wednesday", "flightNumber":"0B6806", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"PARIS(BVA)", "departureHour":"  ", "arrivalHour":"23:50"  }
+   {"day":"Wednesday", "flightNumber":"W6 3651", "company":"WIZZ AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Wednesday", "flightNumber":"0B6831", "company":"BLUE AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"08:30"  }
+   {"day":"Wednesday", "flightNumber":"0B6823", "company":"BLUE AIR", "arrivalCity":"BRUXELLES", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"10:30"  }
+   {"day":"Wednesday", "flightNumber":"W6 3693", "company":"WIZZ AIR", "arrivalCity":"LARNACA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:50"  }
+   {"day":"Wednesday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Wednesday", "flightNumber":"0B6805", "company":"BLUE AIR", "arrivalCity":"PARIS(BVA)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"16:50"  }
+   {"day":"Wednesday", "flightNumber":"W6 3675", "company":"WIZZ AIR", "arrivalCity":"ROMA(CIAMPINO)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"19:50"  }
+   {"day":"Thursday", "flightNumber":"W6 3676", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"ROMA(CIAMPINO)", "departureHour":"  ", "arrivalHour":"00:55"  }
+   {"day":"Thursday", "flightNumber":"W6 3652", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"13:15"  }
+   {"day":"Thursday", "flightNumber":"OS645", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Thursday", "flightNumber":"0B6832", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"15:50"  }
+   {"day":"Thursday", "flightNumber":"W6 3672", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"BERGAMO", "departureHour":"  ", "arrivalHour":"19:05"  }
+   {"day":"Thursday", "flightNumber":"0B6816", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"ROMA", "departureHour":"  ", "arrivalHour":"19:20"  }
+   {"day":"Thursday", "flightNumber":"W6 3651 ", "company":"WIZZ AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Thursday", "flightNumber":"0B6831", "company":"BLUE AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"08:30"  }
+   {"day":"Thursday", "flightNumber":"0B6815", "company":"BLUE AIR", "arrivalCity":"ROMA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:40"  }
+   {"day":"Thursday", "flightNumber":"W6 3671", "company":"WIZZ AIR", "arrivalCity":"BERGAMO", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:50"  }
+   {"day":"Thursday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Friday", "flightNumber":"RO158", "company":"TAROM", "arrivalCity":"Iasi", "departureCity":"TELAVIV", "departureHour":"  ", "arrivalHour":"12:50"  }
+   {"day":"Friday", "flightNumber":"W6 3652", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"13:45"  }
+   {"day":"Friday", "flightNumber":"OS645", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Friday", "flightNumber":"0B6832", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"15:50"  }
+   {"day":"Friday", "flightNumber":"0B6806", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"PARIS(BVA)", "departureHour":"  ", "arrivalHour":"17:30"  }
+   {"day":"Friday", "flightNumber":"W6 3682", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"CATANIA", "departureHour":"  ", "arrivalHour":"19:50"  }
+   {"day":"Friday", "flightNumber":"0B6822", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"KOLN", "departureHour":"  ", "arrivalHour":"23:00"  }
+   {"day":"Friday", "flightNumber":"W6 3651", "company":"WIZZ AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Friday", "flightNumber":"RO157", "company":"TAROM", "arrivalCity":"TELAVIV", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Friday", "flightNumber":"0B6831", "company":"BLUE AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"08:30"  }
+   {"day":"Friday", "flightNumber":"0B6805", "company":"BLUE AIR", "arrivalCity":"PARIS(BVA)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"10:30"  }
+   {"day":"Friday", "flightNumber":"W6 3681", "company":"WIZZ AIR", "arrivalCity":"CATANIA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"14:20"  }
+   {"day":"Friday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Friday", "flightNumber":"0B6821", "company":"BLUE AIR", "arrivalCity":"KOLN", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"17:00"  }
+   {"day":"Friday", "flightNumber":"W6 3669", "company":"WIZZ AIR", "arrivalCity":"TREVISO(VENETIA)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"20:20"  }
+   {"day":"Friday", "flightNumber":"RO395", "company":"TAROM", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"20:50"  }
+   {"day":"Saturday", "flightNumber":"W6 3670", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"TREVISO(VENETIA)", "departureHour":"  ", "arrivalHour":"00:55"  }
+   {"day":"Saturday", "flightNumber":"RO396", "company":"TAROM", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"04:00"  }
+   {"day":"Saturday", "flightNumber":"W6 3690", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"TELAVIV", "departureHour":"  ", "arrivalHour":"12:35"  }
+   {"day":"Saturday", "flightNumber":"OS645", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Saturday", "flightNumber":"0B6824", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"BRUXELLES", "departureHour":"  ", "arrivalHour":"17:00"  }
+   {"day":"Saturday", "flightNumber":"W6 3672", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"BERGAMO", "departureHour":"  ", "arrivalHour":"19:05"  }
+   {"day":"Saturday", "flightNumber":"0B6816", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"ROMA", "departureHour":"  ", "arrivalHour":"19:20"  }
+   {"day":"Saturday", "flightNumber":"W6 3668", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"BOLOGNA", "departureHour":"  ", "arrivalHour":"23:55"  }
+   {"day":"Saturday", "flightNumber":"W6 3689", "company":"WIZZ AIR", "arrivalCity":"TELAVIV", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:00"  }
+   {"day":"Saturday", "flightNumber":"0B6823", "company":"BLUE AIR", "arrivalCity":"BRUXELLES", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"10:30"  }
+   {"day":"Saturday", "flightNumber":"0B6815", "company":"BLUE AIR", "arrivalCity":"ROMA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:40"  }
+   {"day":"Saturday", "flightNumber":"W6 367", "company":"WIZZ AIR", "arrivalCity":"BERGAMO", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:50"  }
+   {"day":"Saturday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Saturday", "flightNumber":"W6 3667", "company":"WIZZ AIR", "arrivalCity":"BOLOGNA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"19:35"  }
+   {"day":"Sunday", "flightNumber":"W6 3652", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"13:15"  }
+   {"day":"Sunday", "flightNumber":"0B6808", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"BARCELONA", "departureHour":"  ", "arrivalHour":"15:00"  }
+   {"day":"Sunday", "flightNumber":"OS645", "company":"AUSTRIAN", "arrivalCity":"Iasi", "departureCity":"VIENA", "departureHour":"  ", "arrivalHour":"15:20"  }
+   {"day":"Sunday", "flightNumber":"W6 3694", "company":"WIZZ AIR", "arrivalCity":"Iasi", "departureCity":"LARNACA", "departureHour":"  ", "arrivalHour":"19:20"  }
+   {"day":"Sunday", "flightNumber":"0B6832", "company":"BLUE AIR", "arrivalCity":"Iasi", "departureCity":"LONDRA", "departureHour":"  ", "arrivalHour":"23:55"  }
+   {"day":"Sunday", "flightNumber":"W6 3651", "company":"WIZZ AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"06:05"  }
+   {"day":"Sunday", "flightNumber":"0B6807", "company":"BLUE AIR", "arrivalCity":"BERCELONA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"07:00"  }
+   {"day":"Sunday", "flightNumber":"W6 3693", "company":"WIZZ AIR", "arrivalCity":"LARNACA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"13:50"  }
+   {"day":"Sunday", "flightNumber":"OS646", "company":"AUSTRIAN", "arrivalCity":"VIENA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"15:55"  }
+   {"day":"Sunday", "flightNumber":"0B6831", "company":"BLUE AIR", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"16:35"  }
+   {"day":"Sunday", "flightNumber":"W6 3675", "company":"WIZZ AIR", "arrivalCity":"ROMA(CIAMPINO)", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"19:50"  }
+   {"day":"Sunday", "flightNumber":"RO395", "company":"TAROM", "arrivalCity":"LONDRA", "departureCity":"Iasi", "departureHour":"  ", "arrivalHour":"20:50"  }
+ 

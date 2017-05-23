@@ -97,7 +97,7 @@ public class AirportGatherInfoTest {
     @Test
     public void test_fli_cont(){
         CreatingFlightDto dto =new CreatingFlightDto();
-        dto.arrivalCity=dto.departureCity=dto.departureHour=dto.arrivalHour=dto.company=dto.day=dto.status=dto.flightNumber="nop";
+        dto.arrivalCity=dto.departureCity=dto.departureHour=dto.arrivalHour=dto.company=dto.day=dto.flightNumber="nop";
         try {ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
             byte[] bytes = objectMapper.writeValueAsBytes(dto);
@@ -128,15 +128,15 @@ public class AirportGatherInfoTest {
             obj.put("arrivalHour", "10:44");
             obj.put("status", "done");
 
-            is = new URL("http://localhost:8080/airports/bacau/flights").openStream();
+            is = new URL("http://localhost:8081/airports/bacau/flights").openStream();
             BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
             String jsonText = readAll(rd);
             JSONArray arr=new JSONArray(jsonText);
             int contor = arr.length();
 
             AirportGatherInfo gth = new AirportGatherInfo();
-           gth.gatherObject("Luni","1111", "Blue", "Bacau","Bacau", "10:44", "10:44","estimat","bacau") ;
-            is1 = new URL("http://localhost:8080/airports/bacau/flights").openStream();
+           gth.gatherObject("Luni","1111", "Blue", "Bacau","Bacau", "10:44", "10:44","bacau") ;
+            is1 = new URL("http://localhost:8081/airports/bacau/flights").openStream();
             BufferedReader rd1 = new BufferedReader(new InputStreamReader(is1, Charset.forName("UTF-8")));
 
             String jsonText1 = readAll(rd1);
@@ -156,14 +156,14 @@ public class AirportGatherInfoTest {
         InputStream is = null;
         InputStream is1 =null;
         try {
-            is = new URL("http://localhost:8080/airports/bacau/flights").openStream();
+            is = new URL("http://localhost:8081/airports/bacau/flights").openStream();
 
         BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
         String jsonText = readAll(rd);
         JSONArray arr=new JSONArray(jsonText);
         int contor = arr.length();
             AirportGatherInfo.main(null);
-            is1 = new URL("http://localhost:8080/airports/bacau/flights").openStream();
+            is1 = new URL("http://localhost:8081/airports/bacau/flights").openStream();
             BufferedReader rd1 = new BufferedReader(new InputStreamReader(is1, Charset.forName("UTF-8")));
 
             String jsonText1 = readAll(rd1);

@@ -27,9 +27,6 @@ public class FlightComparator implements Comparator<FlightDto> {
         else if (compareBy.equals("company")) {
             return a.company.compareTo(b.company);
         }
-        else if (compareBy.equals("status")) {
-            return a.status.compareTo(b.status);
-        }
         else if (compareBy.equals("day")) {
             return a.day.compareTo(b.day);
         }
