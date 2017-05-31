@@ -3,6 +3,7 @@ package carRental.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 
 import carRental.DTO.AgencyDto;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:8081")
 @RequestMapping("/agencies")
 public class AgencyController {
     @Autowired
@@ -45,7 +47,7 @@ public class AgencyController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public ResponseEntity<AgencyDto> getStudentById(@PathVariable("id") Long id) {
+    public ResponseEntity<AgencyDto> getAgencyById(@PathVariable("id") Long id) {
     	Agency agency = this.service.getById(id);
         if (agency == null) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
