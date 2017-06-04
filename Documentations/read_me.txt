@@ -1,0 +1,1 @@
+Hosted at: http://178.62.69.219:8081/swagger-ui.html#/
